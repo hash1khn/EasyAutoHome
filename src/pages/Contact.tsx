@@ -9,7 +9,6 @@ import {
   MessageCircle
 } from 'lucide-react';
 import SectionHeader from '../components/SectionHeader';
-import CTAButton from '../components/CTAButton';
 import { createWhatsAppLink } from '../lib/utils';
 
 const Contact = () => {
