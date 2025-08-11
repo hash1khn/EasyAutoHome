@@ -14,7 +14,6 @@ import {
 } from 'lucide-react';
 import SectionHeader from '../components/SectionHeader';
 import CTAButton from '../components/CTAButton';
-import MetricChip from '../components/MetricChip';
 import SilkBackground from '../components/SilkBackground';
 import { metrics, heroMetrics } from '../data/metrics';
 
