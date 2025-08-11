@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Check, Star } from 'lucide-react';
 import SectionHeader from '../components/SectionHeader';
 import CTAButton from '../components/CTAButton';
-import { pricingTiers, compareFeatures } from '../data/pricing';
+import { pricingTiers } from '../data/pricing';
 
 const Pricing = () => {
   return (
