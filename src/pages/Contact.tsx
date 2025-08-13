@@ -16,7 +16,6 @@ const Contact = () => {
     name: '',
     company: '',
     city: '',
-    whatsapp: '',
     services: '',
     budget: ''
   });
@@ -124,38 +123,20 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="city" className="block text-sm font-medium text-gray-700 mb-2">
-                      City *
-                    </label>
-                    <input
-                      type="text"
-                      id="city"
-                      name="city"
-                      value={formData.city}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-racing-red focus:border-transparent transition-colors duration-200"
-                      placeholder="Your city"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="whatsapp" className="block text-sm font-medium text-gray-700 mb-2">
-                      WhatsApp Number *
-                    </label>
-                    <input
-                      type="tel"
-                      id="whatsapp"
-                      name="whatsapp"
-                      value={formData.whatsapp}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-racing-red focus:border-transparent transition-colors duration-200"
-                      placeholder="+1 (555) 123-4567"
-                    />
-                  </div>
+                <div>
+                  <label htmlFor="city" className="block text-sm font-medium text-gray-700 mb-2">
+                    City *
+                  </label>
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    value={formData.city}
+                    onChange={handleInputChange}
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-racing-red focus:border-transparent transition-colors duration-200"
+                    placeholder="Your city"
+                  />
                 </div>
 
                 <div>
@@ -198,7 +179,7 @@ const Contact = () => {
 
                 <div className="flex justify-center">
                   <a
-                    href={createWhatsAppLink(formData.whatsapp || '5551234567', whatsappMessage)}
+                    href={createWhatsAppLink('+971567191045', whatsappMessage)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full max-w-md bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-105"
